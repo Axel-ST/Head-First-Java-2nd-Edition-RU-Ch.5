@@ -12,7 +12,7 @@ public class SimpleDotComTestDrive {
         int[] locations = {2,3,4};
         dot.setLocationCells(locations);
         String userGuess = "2";
-        String result = dot.CheckYourself(userGuess);
+        String result = dot.checkYourself(userGuess);
         String testResult = "failed";
         if (result.equals("hit")) {
             testResult = "base passed";
@@ -21,7 +21,7 @@ public class SimpleDotComTestDrive {
         }
         testResult = "failed";
         userGuess = "1";
-        result = dot.CheckYourself(userGuess); // check another turn
+        result = dot.checkYourself(userGuess); // check another turn
         if (result.equals("miss")) {
             testResult = "half passed";
         } else {
@@ -29,9 +29,9 @@ public class SimpleDotComTestDrive {
         }
         testResult = "failed";
         userGuess = "3";
-        result = dot.CheckYourself(userGuess);
+        result = dot.checkYourself(userGuess);
         userGuess = "4";
-        result = dot.CheckYourself(userGuess); // check all available turns
+        result = dot.checkYourself(userGuess); // check all available turns
         if (result.equals("kill")) {
             testResult = "fully passed";
         } else {
