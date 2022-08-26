@@ -16,6 +16,7 @@ public class SimpleDotComTestDrive {
         String testResult = "failed";
         if (result.equals("hit")) {
             testResult = "base passed";
+            System.out.println(testResult);
         } else { // my ideas for testing all results
             System.out.println(testResult + " - hit"); // return position of fail
         }
@@ -24,6 +25,7 @@ public class SimpleDotComTestDrive {
         result = dot.checkYourself(userGuess); // check another turn
         if (result.equals("miss")) {
             testResult = "half passed";
+            System.out.println(testResult);
         } else {
             System.out.println(testResult + " - miss"); // return position of fail
         }
