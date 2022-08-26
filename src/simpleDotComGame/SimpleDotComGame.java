@@ -20,7 +20,7 @@ public class SimpleDotComGame {
             String guess = helper.getUserInput("Enter a number: ");
             String result = theDotCom.checkYourself(guess);
             numOfGuesses++;
-            if (result == "kill") {
+            if (result.equals("kill")) {
                 isAlive = false;
                 System.out.println("You took " + numOfGuesses + " guesses.");
             }
