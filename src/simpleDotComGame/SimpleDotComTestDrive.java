@@ -13,7 +13,7 @@ public class SimpleDotComTestDrive { // тест для обработчика
         dot.setLocationCells(locations);
         String userGuess = "2"; // псевдопользовательский ввод
         String result = dot.checkYourself(userGuess); // запуск проверки
-        String testResult = "failed";
+        String testResult = "failed"; // default test result
         if (result.equals("hit")) {
             testResult = "base passed";
             System.out.println(testResult);

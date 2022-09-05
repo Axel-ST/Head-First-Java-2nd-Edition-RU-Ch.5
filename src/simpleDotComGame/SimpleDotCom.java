@@ -14,7 +14,7 @@ public class SimpleDotCom { // класс обработчика игры; пр�
     public void setLocationCells(int[] locs){
         locationCells = locs;
     }
-    public String checkYourself(String stringGuess) {
+    public String checkYourself(String stringGuess) { // checking player's turn
         String result = "miss";
         int guess = Integer.parseInt(stringGuess);
         
