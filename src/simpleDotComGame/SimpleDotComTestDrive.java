@@ -6,13 +6,13 @@
 
 package simpleDotComGame;
 
-public class SimpleDotComTestDrive {
+public class SimpleDotComTestDrive { // тест для обработчика
     public static void main(String[] args) {
         SimpleDotCom dot = new SimpleDotCom();
-        int[] locations = {2,3,4};
+        int[] locations = {2,3,4}; // псевдорандомный массив
         dot.setLocationCells(locations);
-        String userGuess = "2";
-        String result = dot.checkYourself(userGuess);
+        String userGuess = "2"; // псевдопользовательский ввод
+        String result = dot.checkYourself(userGuess); // запуск проверки
         String testResult = "failed";
         if (result.equals("hit")) {
             testResult = "base passed";
@@ -21,7 +21,7 @@ public class SimpleDotComTestDrive {
             System.out.println(testResult + " - hit"); // return position of fail
         }
         testResult = "failed";
-        userGuess = "1";
+        userGuess = "1"; // псевдопользовательский ввод
         result = dot.checkYourself(userGuess); // check another turn
         if (result.equals("miss")) {
             testResult = "half passed";
@@ -30,9 +30,9 @@ public class SimpleDotComTestDrive {
             System.out.println(testResult + " - miss"); // return position of fail
         }
         testResult = "failed";
-        userGuess = "3";
+        userGuess = "3"; // псевдопользовательский ввод
         result = dot.checkYourself(userGuess);
-        userGuess = "4";
+        userGuess = "4"; // псевдопользовательский ввод
         result = dot.checkYourself(userGuess); // check all available turns
         if (result.equals("kill")) {
             testResult = "fully passed";

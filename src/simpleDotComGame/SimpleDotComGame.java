@@ -7,6 +7,12 @@
 package simpleDotComGame;
 
 public class SimpleDotComGame {
+    /* основной класс;
+     * выполняет запуск,
+     * создает массив случайных чисел,
+     * считывает пользовательский ввод;
+     * выводит результат и закрывает игру
+     */
     public static void main(String[] args) {
         int numOfGuesses = 0;
         GameHelper helper = new GameHelper();

@@ -10,7 +10,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class GameHelper {
+public class GameHelper { // класс-помощник для считывания пользовательского ввода
     public String getUserInput(String prompt) {
         String inputline = null;
         System.out.print(prompt + " ");

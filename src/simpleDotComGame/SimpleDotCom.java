@@ -6,7 +6,7 @@
 
 package simpleDotComGame;
 
-public class SimpleDotCom {
+public class SimpleDotCom { // класс обработчика игры; проверяет попадания, ведет счет, выводит результат
     
     private int[] locationCells;
     private int numOfHits = 0;
