@@ -9,7 +9,7 @@ package simpleDotComGame;
 public class SimpleDotComTestDrive { // тест для обработчика
     public static void main(String[] args) {
         SimpleDotCom dot = new SimpleDotCom();
-        int[] locations = {2,3,4}; // псевдорандомный массив
+        int[] locations = {2, 3, 4}; // псевдорандомный массив
         dot.setLocationCells(locations);
         String userGuess = "2"; // псевдопользовательский ввод
         String result = dot.checkYourself(userGuess); // запуск проверки

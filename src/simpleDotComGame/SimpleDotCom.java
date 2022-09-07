@@ -11,14 +11,15 @@ public class SimpleDotCom { // класс обработчика игры; пр�
     private int[] locationCells;
     private int numOfHits = 0;
     
-    public void setLocationCells(int[] locs){
+    public void setLocationCells(int[] locs) {
         locationCells = locs;
     }
+    
     public String checkYourself(String stringGuess) { // checking player's turn
         String result = "miss";
         int guess = Integer.parseInt(stringGuess);
         
-        for (int cell:locationCells) {
+        for (int cell : locationCells) {
             if (guess == cell) {
                 result = "hit";
                 numOfHits++;
@@ -29,7 +30,7 @@ public class SimpleDotCom { // класс обработчика игры; пр�
         if (numOfHits == locationCells.length) {
             result = "kill";
         }
-    
+        
         System.out.println(result);
         return result;
     }
